@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    vertical-align: center ;
+    background-color: rgb(28, 240, 215);
+    color: white;
+    font-style:initial;
+    font-size: 40px;
+    padding-bottom: 22px;
+    word-spacing: 10px;
+    margin-bottom: auto;
+}
+
+/* ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 250px;
+    background-color: #f36192;
+    height: 520px;
+    margin-top: -5px;
+  } */
+
+  /* a.ahome {
+    background-color: #555;
+    text-align: center;
+    color: rgb(238, 230, 230);
+    width: 1450px;
+    height:50px;
+  } */
+  
+  /* li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  } */
+
+  .ahome {
+    /* background-color: #555; */
+    text-align: center;
+    background-color: pink;
+    width: 1450px;
+    height:50px;
+  }
+
+   a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    height: 50px;
+  }
+
+  
+
+  .bg{
+    background-image: url("/assets/images/train.jpg");
+    height : 698px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+  
+  li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+h3 {
+    background-color: rgb(48, 60, 112);
+    color: rgb(238, 230, 230);
+    padding: 20px;
+    width: 250px;
+    margin-top: auto;
+  }
+  
+  

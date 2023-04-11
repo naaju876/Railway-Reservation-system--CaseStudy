@@ -1,0 +1,57 @@
+<body class="bg">
+  <div class="Head">
+    <h1 style="color:green;">
+      <img src="/assets/images/logo1.jpg" height="150px" width="180px" align="right">
+      <img src="/assets/images/logo2.jpg" height="150px" width="180px" align="left">
+      <br>WELCOME TO PAKISTAN<br><br>ONLINE RAILWAY RESERVATION SYSTEM<br>
+    </h1>
+
+
+
+    <mat-toolbar class="ahome">
+      <span><mat-icon>eco</mat-icon><a mat-button routerLink="/home"></a></span>
+      <div class="spacer"></div>
+      <a mat-button routerLink="/home">HOME</a>
+      <a mat-button routerLink="/userreg">NEW USER REGISTRATION</a>
+      <a mat-button routerLink="/userLogin">USER-LOGIN</a>
+      <a mat-button routerLink='/AdminLogin'>ADMIN-LOGIN</a>
+      <a mat-button routerLink='/searchtrains'>TRAIN-SCHEDULE</a>
+
+    </mat-toolbar>
+
+
+
+    <div class="container" style="margin-left: 200px; margin-bottom: -525px;">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card-body p-4 p-sm-5">
+              <h5 class="card-title text-center mb-5 fw-light fs-5">ADMIN LOG-IN</h5>
+              <form [formGroup]="adminlog" (ngSubmit)="validate()">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" formControlName="username">
+                  <label for="floatingInput">User Name</label>
+                  <span style="color: red;" class="error"
+                    *ngIf="adminlog.controls['username'].touched && adminlog.controls['username'].errors"> Username is
+                    required
+                  </span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" formControlName="password">
+                  <label for="floatingPassword">Password</label>
+                  <span style="color: red;" class="error"
+                    *ngIf="adminlog.controls['password'].touched && adminlog.controls['password'].errors"> Password is
+                    required
+                  </span>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

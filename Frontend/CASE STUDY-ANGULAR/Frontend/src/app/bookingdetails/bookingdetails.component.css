@@ -1,0 +1,9 @@
+
+
+:host ::ng-deep .p-card-body {
+    background-color: rgb(201, 215, 219);
+}
+
+:host ::ng-deep .p-datatable-table {
+    width:max-content;
+}
